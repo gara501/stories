@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Pixelify';
+  src: url('./assets/fonts/Pixelify/PixelifySans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pixelify';
+  src: url('./assets/fonts/Pixelify/PixelifySans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pixelify';
+  src: url('./assets/fonts/Pixelify/PixelifySans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jersey';
+  src: url('./assets/fonts/Jersey/Jersey15-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Pixelify', sans-serif;
+  background: #0a0a0a;
+  color: #fff;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}

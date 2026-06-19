@@ -1,0 +1,296 @@
+{
+  "scene_02_contagio_ala": {
+    "background": "scene_02.png",
+    "bg_character": "virus-think.png",
+    "dialogues": [
+      {
+        "character": "Dr. Arenas",
+        "text": "Sacamos a Mateo, pero colapsó en la esclusa de inmediato."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "El aire del Bloque B se mezcló con el pasillo antes de poder sellar."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Las alarmas de los filtros internos se activaron; el virus ya está en este piso."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "El equipo está en pánico y quieren evacuar, pero si salen, infectarán la ciudad."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "¿Bloqueamos las salidas de emergencia?"
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_A2_1",
+        "buttonText": "¡No! Déjalos salir, no podemos condenarlos a morir atrapados.",
+        "nextScene": "scene_03_pandemia_global",
+        "metrics": {
+          "etica": -1,
+          "supervivencia": -2,
+          "liderazgo": -1,
+          "humanidad": 2
+        }
+      },
+      {
+        "id": "opt_A2_2",
+        "buttonText": "Cierra las salidas. La cuarentena exige contención total.",
+        "nextScene": "scene_03_cuarentena_estricta",
+        "metrics": {
+          "etica": 2,
+          "supervivencia": 1,
+          "liderazgo": 1,
+          "humanidad": -2
+        }
+      },
+      {
+        "id": "opt_A2_3",
+        "buttonText": "Sella las puertas y diles que el sistema falló para evitar disturbios.",
+        "nextScene": "scene_03_contencion_engano",
+        "metrics": {
+          "etica": -1,
+          "supervivencia": 1,
+          "liderazgo": 2,
+          "humanidad": -1
+        }
+      }
+    ]
+  },
+  "scene_02_aislamiento_mateo": {
+    "background": "scene_02.png",
+    "bg_character": "virus-think.png",
+    "dialogues": [
+      {
+        "character": "Dr. Arenas",
+        "text": "Hicimos lo correcto según el manual, Mateo sigue aislado en el bloque."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Sin embargo, el sistema automático se congeló y la presión está fallando."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Si no actuamos, las esclusas cederán y el virus escapará al exterior."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "El protocolo exige sobrecargar el reactor del bloque para esterilizarlo... matando a Mateo de inmediato."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "¿Procedemos con la sobrecarga?"
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_B2_1",
+        "buttonText": "Inicia la sobrecarga. Es nuestro deber seguir el protocolo.",
+        "nextScene": "scene_03_esterilizacion_total",
+        "metrics": {
+          "etica": 2,
+          "supervivencia": 1,
+          "liderazgo": 1,
+          "humanidad": -1
+        }
+      },
+      {
+        "id": "opt_B2_2",
+        "buttonText": "No puedo hacerlo. Busquemos otra forma sin matarlo activamente.",
+        "nextScene": "scene_03_fallo_presion",
+        "metrics": {
+          "etica": 1,
+          "supervivencia": -1,
+          "liderazgo": -1,
+          "humanidad": 2
+        }
+      },
+      {
+        "id": "opt_B2_3",
+        "buttonText": "Activa el reactor. Un sacrificio inmediato evitará que el virus se extienda.",
+        "nextScene": "scene_03_esterilizacion_total",
+        "metrics": {
+          "etica": 0,
+          "supervivencia": 2,
+          "liderazgo": 1,
+          "humanidad": -2
+        }
+      }
+    ]
+  },
+  "scene_02_fallo_sistema": {
+    "background": "scene_02_failure.png",
+    "bg_character": "virus-think.png",
+    "dialogues": [
+      {
+        "character": "Dr. Arenas",
+        "text": "Dejamos que la IA actuara... pero el sistema automatizado tuvo un error crítico."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Purgó los bloques A y B por igual. Mateo murió, pero también tres científicos sanos."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "La junta directiva está pidiendo el registro de comandos para deslindar responsabilidades."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Verán que decidiste no tocar el panel manual para intervenir."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "¿Borramos tu orden de inacción del historial del sistema?"
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_C2_1",
+        "buttonText": "Borra el registro. Si nos culpan, nadie hallará la cura.",
+        "nextScene": "scene_03_encubrimiento_exitoso",
+        "metrics": {
+          "etica": -2,
+          "supervivencia": 2,
+          "liderazgo": 0,
+          "humanidad": 0
+        }
+      },
+      {
+        "id": "opt_C2_2",
+        "buttonText": "Deja los datos intactos. Alterar registros legales es inaceptable.",
+        "nextScene": "scene_03_juicio_comite",
+        "metrics": {
+          "etica": 2,
+          "supervivencia": -1,
+          "liderazgo": 1,
+          "humanidad": 0
+        }
+      },
+      {
+        "id": "opt_C2_3",
+        "buttonText": "Culpa a la IA públicamente para exigir más presupuesto de seguridad.",
+        "nextScene": "scene_03_oportunismo_politico",
+        "metrics": {
+          "etica": -2,
+          "supervivencia": 1,
+          "liderazgo": 1,
+          "humanidad": -1
+        }
+      }
+    ]
+  },
+  "scene_02_purga_manual": {
+    "background": "scene_02.png",
+    "bg_character": "virus-think.png",
+    "dialogues": [
+      {
+        "character": "Dr. Arenas",
+        "text": "La purga manual incineró el bloque por completo."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Mateo... ya no está. Pero las alarmas se apagaron y salvamos al edificio."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Sin embargo, la familia de Mateo acaba de llegar a la recepción."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Están exigiendo respuestas y aún no saben nada sobre la existencia del virus."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "¿Qué les decimos?"
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_D2_1",
+        "buttonText": "Diles la verdad. Tienen derecho a saber que murió como un héroe.",
+        "nextScene": "scene_03_verdad_publica",
+        "metrics": {
+          "etica": 2,
+          "supervivencia": -1,
+          "liderazgo": 1,
+          "humanidad": 2
+        }
+      },
+      {
+        "id": "opt_D2_2",
+        "buttonText": "Invéntate un accidente industrial estándar. La verdad causaría pánico.",
+        "nextScene": "scene_03_secreto_estado",
+        "metrics": {
+          "etica": -1,
+          "supervivencia": 2,
+          "liderazgo": 1,
+          "humanidad": -1
+        }
+      }
+    ]
+  },
+  "scene_02_experimento_mateo": {
+    "background": "scene_02_experiment.png",
+    "bg_character": "virus-mad.png",
+    "dialogues": [
+      {
+        "character": "Dr. Arenas",
+        "text": "Es espantoso escucharlo por el intercomunicador... pero tenías razón."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Sus datos de degradación celular nos están dando el mapa genético del virus."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Mateo está en agonía y nos ruega que activemos la purga para terminar su dolor."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Ya tenemos el 80% de los datos necesarios, pero falta el tramo final."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "¿Qué hacemos?"
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_E2_1",
+        "buttonText": "Corta la transmisión y purga el bloque. No puedo seguir escuchando esto.",
+        "nextScene": "scene_03_datos_incompletos",
+        "metrics": {
+          "etica": 1,
+          "supervivencia": 0,
+          "liderazgo": -1,
+          "humanidad": 2
+        }
+      },
+      {
+        "id": "opt_E2_2",
+        "buttonText": "Mantén la línea abierta. Ese 20% restante salvará a millones.",
+        "nextScene": "scene_03_datos_completos",
+        "metrics": {
+          "etica": -1,
+          "supervivencia": 2,
+          "liderazgo": 1,
+          "humanidad": -2
+        }
+      },
+      {
+        "id": "opt_E2_3",
+        "buttonText": "Dile que si nos da los últimos síntomas abriremos la puerta. Miéntale.",
+        "nextScene": "scene_03_extraccion_cruel",
+        "metrics": {
+          "etica": -2,
+          "supervivencia": 2,
+          "liderazgo": 1,
+          "humanidad": -2
+        }
+      }
+    ]
+  }
+}

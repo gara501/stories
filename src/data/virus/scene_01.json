@@ -1,0 +1,91 @@
+{
+  "scene_01_bloque_b": {
+    "background": "scene_01.png",
+    "bg_character": "virus.png",
+    "dialogues": [
+      {
+        "character": "Dr. Arenas",
+        "text": "El bloque B acaba de entrar en cuarentena automática."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Mateo rompió el protocolo... está expuesto al patógeno."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "En tres minutos el sistema purgará el oxígeno del bloque para incinerar el virus."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Si abrimos la puerta para sacarlo, el virus podría entrar a la ventilación y contagiar a las 70 personas del edificio."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "¿Qué hacemos?"
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_A",
+        "buttonText": "¡Abre la puerta! No podemos dejarlo morir.",
+        "nextScene": "scene_02_contagio_ala",
+        "metrics": {
+          "etica": 0,
+          "supervivencia": -1,
+          "liderazgo": 0,
+          "humanidad": 2
+        }
+      },
+      {
+        "id": "opt_B",
+        "buttonText": "El protocolo es absoluto. Mantén la puerta cerrada.",
+        "nextScene": "scene_02_aislamiento_mateo",
+        "metrics": {
+          "etica": 2,
+          "supervivencia": 1,
+          "liderazgo": 1,
+          "humanidad": -1
+        }
+      },
+      {
+        "id": "opt_C",
+        "buttonText": "No toques el panel. Deja que el sistema se encargue.",
+        "nextScene": "scene_02_fallo_sistema",
+        "metrics": {
+          "etica": 0,
+          "supervivencia": 1,
+          "liderazgo": -1,
+          "humanidad": 0
+        }
+      },
+      {
+        "id": "opt_D",
+        "buttonText": "Una vida contra setenta. Inicia la purga ahora.",
+        "nextScene": "scene_02_purga_manual",
+        "metrics": {
+          "etica": -1,
+          "supervivencia": 2,
+          "liderazgo": 1,
+          "humanidad": -2
+        }
+      },
+      {
+        "id": "opt_E",
+        "buttonText": "Déjalo encerrado, pero registra sus síntomas por el intercomunicador.",
+        "nextScene": "scene_02_experimento_mateo",
+        "metrics": {
+          "etica": -2,
+          "supervivencia": 1,
+          "liderazgo": 0,
+          "humanidad": -1
+        }
+      }
+    ],
+    "metrics": {
+      "etica": 0,
+      "supervivencia": 0,
+      "liderazgo": 0,
+      "humanidad": 0
+    }
+  }
+}

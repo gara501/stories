@@ -1,0 +1,648 @@
+{
+  "scene_03_pandemia_global": {
+    "background": "scene_03_pandemic.png",
+    "bg_character": "virus-mad.png",
+    "dialogues": [
+      {
+        "character": "Dr. Arenas",
+        "text": "Dios nos perdone... la evacuación fue un caos absoluto."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Varios científicos infectados lograron burlar los cercos y subieron al transporte público."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Los hospitales de la ciudad reportan los primeros colapsos por síntomas respiratorios."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "El gobierno va a declarar la ley marcial, pero el virus ya está fuera de control."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Nos queda un último vial experimental que podría protegernos solo a nosotros dos. ¿Te lo inyectas?"
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_C3_PG1",
+        "buttonText": "Inyéctatelo. Debemos sobrevivir para intentar replicar la fórmula.",
+        "nextScene": "scene_final_supervivientes",
+        "metrics": {
+          "etica": -1,
+          "supervivencia": 2,
+          "liderazgo": 0,
+          "humanidad": -1
+        }
+      },
+      {
+        "id": "opt_C3_PG2",
+        "buttonText": "No. Entrega el vial al equipo médico externo, que investiguen con él.",
+        "nextScene": "scene_final_martires",
+        "metrics": {
+          "etica": 2,
+          "supervivencia": -2,
+          "liderazgo": 1,
+          "humanidad": 2
+        }
+      }
+    ]
+  },
+  "scene_03_cuarentena_estricta": {
+    "background": "scene_03_pandemic.png",
+    "bg_character": "virus-think.png",
+    "dialogues": [
+      {
+        "character": "Dr. Arenas",
+        "text": "Las puertas blindadas están selladas. Nadie puede salir ni entrar."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "El personal atrapado en los pasillos está golpeando los cristales, exigiendo aire purificado."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Los sistemas muestran que el aire de este búnker central se agotará si mantenemos los filtros activos para todo el piso."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Para asegurar nuestra supervivencia, tenemos que cortar el flujo de ventilación de los pasillos externos."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Eso sofocará al resto del equipo en menos de diez minutos. ¿Cierro las válvulas?"
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_C3_CE1",
+        "buttonText": "Cierra las válvulas. Nuestra supervivencia garantiza que la investigación continúe.",
+        "nextScene": "scene_final_bunker",
+        "metrics": {
+          "etica": -1,
+          "supervivencia": 2,
+          "liderazgo": 1,
+          "humanidad": -2
+        }
+      },
+      {
+        "id": "opt_C3_CE2",
+        "buttonText": "No las toques. Compartiremos el oxígeno disponible hasta que llegue ayuda.",
+        "nextScene": "scene_final_asfixia",
+        "metrics": {
+          "etica": 2,
+          "supervivencia": -2,
+          "liderazgo": -1,
+          "humanidad": 2
+        }
+      }
+    ]
+  },
+  "scene_03_contencion_engano": {
+    "background": "scene_03_pandemic.png",
+    "bg_character": "virus-smile.png",
+    "dialogues": [
+      {
+        "character": "Dr. Arenas",
+        "text": "Creyeron la mentira del fallo técnico y se replegaron a las salas de descanso."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "El engaño evitó una revuelta, pero los sensores indican que el 90% ya muestra síntomas de contagio."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Una facción del personal técnico está intentando forzar los servidores para descubrir la verdad."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Si acceden al sistema, verán que bloqueaste las salidas deliberadamente."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "¿Inundamos las salas de descanso con gas sedante para neutralizarlos?"
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_C3_CEng1",
+        "buttonText": "Activa el gas. Hay que mantener el control a cualquier precio.",
+        "nextScene": "scene_final_tiranía",
+        "metrics": {
+          "etica": -2,
+          "supervivencia": 2,
+          "liderazgo": 1,
+          "humanidad": -2
+        }
+      },
+      {
+        "id": "opt_C3_CEng2",
+        "buttonText": "Detén esto. Confesemos la verdad antes de que la situación empeore.",
+        "nextScene": "scene_final_linchamiento",
+        "metrics": {
+          "etica": 1,
+          "supervivencia": -2,
+          "liderazgo": -2,
+          "humanidad": 1
+        }
+      }
+    ]
+  },
+  "scene_03_esterilizacion_total": {
+    "background": "scene_03_reactor.png",
+    "bg_character": "virus-smile.png",
+    "dialogues": [
+      {
+        "character": "Dr. Arenas",
+        "text": "El reactor incineró el Bloque B. Mateo y el virus han sido erradicados del sector."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "El edificio está a salvo, pero los niveles de radiación residual en el ala médica son críticos."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "El gobierno exige un informe inmediato firmado por ti para validar la ejecución del protocolo."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Si asumes la autoría total, te enfrentarás a un comité de derechos humanos, pero blindarás al laboratorio."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "¿Firmas el documento asumiendo toda la responsabilidad legal?"
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_C3_ET1",
+        "buttonText": "Firma el informe. Un verdadero líder asume las consecuencias de sus decisiones.",
+        "nextScene": "scene_final_juicio",
+        "metrics": {
+          "etica": 2,
+          "supervivencia": -1,
+          "liderazgo": 2,
+          "humanidad": 0
+        }
+      },
+      {
+        "id": "opt_C3_ET2",
+        "buttonText": "Clasifica el archivo como secreto de estado. Que nadie cargue con la culpa.",
+        "nextScene": "scene_final_anonimato",
+        "metrics": {
+          "etica": -1,
+          "supervivencia": 1,
+          "liderazgo": 0,
+          "humanidad": -1
+        }
+      }
+    ]
+  },
+  "scene_03_fallo_presion": {
+    "background": "scene_03_reactor.png",
+    "bg_character": "virus-smile.png",
+    "dialogues": [
+      {
+        "character": "Dr. Arenas",
+        "text": "Intentamos ganar tiempo, pero las juntas de vacío del Bloque B acaban de colapsar."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "El aire contaminado se está filtrando directamente hacia los laboratorios de desarrollo de vacunas."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Tu insistencia en salvar a Mateo ha puesto en peligro el único lugar donde podíamos fabricar la cura."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "La única opción ahora es evacuar el ala de desarrollo, perdiendo todas las muestras originales."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "¿Ordenas la evacuación inmediata o te quedas a rescatar las muestras bajo riesgo de contagio?"
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_C3_FP1",
+        "buttonText": "Evacuar inmediatamente. Las vidas del equipo médico son lo primero.",
+        "nextScene": "scene_final_derrota",
+        "metrics": {
+          "etica": 1,
+          "supervivencia": 1,
+          "liderazgo": -1,
+          "humanidad": 2
+        }
+      },
+      {
+        "id": "opt_C3_FP2",
+        "buttonText": "Quédate a salvar las muestras. Sin ellas, la humanidad no tiene oportunidad.",
+        "nextScene": "scene_final_sacrificio_util",
+        "metrics": {
+          "etica": 1,
+          "supervivencia": -2,
+          "liderazgo": 2,
+          "humanidad": 1
+        }
+      }
+    ]
+  },
+  "scene_03_encubrimiento_exitoso": {
+    "background": "scene_03_pc.png",
+    "bg_character": "virus-smile.png",
+    "dialogues": [
+      {
+        "character": "Dr. Arenas",
+        "text": "El log de comandos ha sido borrado con éxito. Legalmente, el sistema falló solo."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "La junta directiva se ha creído la historia y nos han ratificado el presupuesto de investigación."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Sin embargo, un analista de sistemas subalterno descubrió un duplicado del historial en un servidor local."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Vino a mi oficina exigiendo un ascenso y discreción a cambio de no filtrar los datos reales a la prensa."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "¿Qué hacemos con él?"
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_C3_EE1",
+        "buttonText": "Dale el ascenso. Es el costo de mantener el secreto a salvo.",
+        "nextScene": "scene_final_chantaje",
+        "metrics": {
+          "etica": -1,
+          "supervivencia": 1,
+          "liderazgo": -1,
+          "humanidad": 0
+        }
+      },
+      {
+        "id": "opt_C3_EE2",
+        "buttonText": "Denúncialo por extorsión interna y haz que seguridad confisque sus dispositivos.",
+        "nextScene": "scene_final_control",
+        "metrics": {
+          "etica": -1,
+          "supervivencia": 2,
+          "liderazgo": 1,
+          "humanidad": -1
+        }
+      }
+    ]
+  },
+  "scene_03_juicio_comite": {
+    "background": "scene_03_reactor.png",
+    "bg_character": "virus-smile.png",
+    "dialogues": [
+      {
+        "character": "Dr. Arenas",
+        "text": "Los datos quedaron intactos. El comité de auditoría interna ha iniciado la sesión técnica."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Tu inacción causó la muerte indirecta de tres científicos debido al error del software."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "La fiscalía del laboratorio te ofrece un trato: si culpas formalmente a la falta de mantenimiento del Dr. Arenas, tu expediente quedará limpio."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Me van a destruir si haces eso... ¿Vas a aceptar el trato?"
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_C3_JC1",
+        "buttonText": "Acepta el trato. El proyecto necesita que yo siga a la cabeza.",
+        "nextScene": "scene_final_traicion",
+        "metrics": {
+          "etica": -2,
+          "supervivencia": 2,
+          "liderazgo": -1,
+          "humanidad": -1
+        }
+      },
+      {
+        "id": "opt_C3_JC2",
+        "buttonText": "Rechaza el trato. Defenderé mis decisiones y asumiré el veredicto.",
+        "nextScene": "scene_final_condena",
+        "metrics": {
+          "etica": 2,
+          "supervivencia": -2,
+          "liderazgo": 1,
+          "humanidad": 1
+        }
+      }
+    ]
+  },
+  "scene_03_oportunismo_politico": {
+    "background": "scene_03_reactor.png",
+    "bg_character": "virus-smile.png",
+    "dialogues": [
+      {
+        "character": "Dr. Arenas",
+        "text": "La campaña mediática contra la IA fue un éxito rotundo."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "El congreso nos ha aprobado un rescate financiero masivo para modernizar las instalaciones manualmente."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Sin embargo, los fondos vienen condicionados a que usemos los nuevos recursos en armamento biológico defensivo, no en la cura."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Es una desviación completa de nuestra misión científica original."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "¿Aceptamos los fondos bajo esas condiciones?"
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_C3_OP1",
+        "buttonText": "Acepta los fondos. Redirigiremos el dinero a la cura en secreto más adelante.",
+        "nextScene": "scene_final_corrupcion",
+        "metrics": {
+          "etica": -1,
+          "supervivencia": 1,
+          "liderazgo": 2,
+          "humanidad": 0
+        }
+      },
+      {
+        "id": "opt_C3_OP2",
+        "buttonText": "Rechaza los fondos. No convertiremos este laboratorio en una fábrica de armas.",
+        "nextScene": "scene_final_quiebra",
+        "metrics": {
+          "etica": 2,
+          "supervivencia": -1,
+          "liderazgo": 1,
+          "humanidad": 1
+        }
+      }
+    ]
+  },
+  "scene_03_verdad_publica": {
+    "background": "scene_03_prensa.png",
+    "bg_character": "virus-mad.png",
+    "dialogues": [
+      {
+        "character": "Dr. Arenas",
+        "text": "La familia de Mateo está destrozada, pero agradecieron tu honestidad."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Desafortunadamente, uno de los familiares filtró la grabación de tu declaración a las redes sociales."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "La prensa internacional está rodeando el edificio y la opinión pública exige el cierre inmediato del complejo por el peligro del virus."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Si cerramos ahora, el patógeno contenido morirá, pero nunca desarrollaremos una vacuna global."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "¿Desobedecemos la orden de clausura y nos atrincheramos adentro?"
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_C3_VP1",
+        "buttonText": "Atrinchérate. La investigación científica está por encima de las protestas.",
+        "nextScene": "scene_final_resistencia",
+        "metrics": {
+          "etica": 1,
+          "supervivencia": -1,
+          "liderazgo": 2,
+          "humanidad": 0
+        }
+      },
+      {
+        "id": "opt_C3_VP2",
+        "buttonText": "Acata la clausura. El laboratorio debe responder ante la sociedad.",
+        "nextScene": "scene_final_clausura",
+        "metrics": {
+          "etica": 2,
+          "supervivencia": 0,
+          "liderazgo": -1,
+          "humanidad": 1
+        }
+      }
+    ]
+  },
+  "scene_03_secreto_estado": {
+    "background": "scene_03_prensa.png",
+    "bg_character": "virus-mad.png",
+    "dialogues": [
+      {
+        "character": "Dr. Arenas",
+        "text": "Aceptaron la historia del accidente industrial sin sospechar nada."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "El pánico masivo se ha evitado y el orden público se mantiene intacto."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Pero el Ministerio de Defensa ha intervenido la investigación, clasificándola como proyecto de seguridad nacional."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "A partir de ahora, todo nuestro trabajo estará fuertemente militarizado y bajo censura total."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "¿Firmas el acuerdo de confidencialidad militar obligatorio?"
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_C3_SE1",
+        "buttonText": "Firma el acuerdo. Mantener los recursos del gobierno es nuestra prioridad.",
+        "nextScene": "scene_final_militarizado",
+        "metrics": {
+          "etica": 0,
+          "supervivencia": 2,
+          "liderazgo": 1,
+          "humanidad": -1
+        }
+      },
+      {
+        "id": "opt_C3_SE2",
+        "buttonText": "Niégate a firmar. Renunciaré antes de ceder la ciencia al ejército.",
+        "nextScene": "scene_final_exilio",
+        "metrics": {
+          "etica": 2,
+          "supervivencia": -1,
+          "liderazgo": -1,
+          "humanidad": 1
+        }
+      }
+    ]
+  },
+  "scene_03_datos_incompletos": {
+    "background": "scene_03_pc.png",
+    "bg_character": "virus-mad.png",
+    "dialogues": [
+      {
+        "character": "Dr. Arenas",
+        "text": "Terminamos con la agonía de Mateo. La purga detuvo su sufrimiento."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Los datos recolectados se quedaron estancados en el 80% del mapa genético."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Nuestros modelos matemáticos indican que sin el 20% restante, la vacuna fallará en una de cada cinco personas."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Para completar el espectro, necesitamos un nuevo sujeto de pruebas expuesto a la cepa activa activa inmediatamente."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "¿Infectamos intencionalmente a uno de los primates de prueba del nivel inferior?"
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_C3_DI1",
+        "buttonText": "Infecta al primate. El fin justifica los medios para completar la vacuna.",
+        "nextScene": "scene_final_vacuna_lista",
+        "metrics": {
+          "etica": -1,
+          "supervivencia": 1,
+          "liderazgo": 1,
+          "humanidad": -1
+        }
+      },
+      {
+        "id": "opt_C3_DI2",
+        "buttonText": "No. No iniciaremos otra cadena de sufrimiento artificial. Trabajemos con el 80%.",
+        "nextScene": "scene_final_vacuna_defectuosa",
+        "metrics": {
+          "etica": 2,
+          "supervivencia": 0,
+          "liderazgo": -1,
+          "humanidad": 2
+        }
+      }
+    ]
+  },
+  "scene_03_datos_completos": {
+    "background": "scene_03_pc.png",
+    "bg_character": "virus-mad.png",
+    "dialogues": [
+      {
+        "character": "Dr. Arenas",
+        "text": "Mateo ha fallecido. Mantuvimos la línea hasta el último segundo de sus signos vitales."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "El mapa genético del patógeno está completo al 100%. Tenemos la clave para sintetizar la cura perfecta."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Sin embargo, los laboratorios competidores han descubierto que poseemos los datos finales."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Nos ofrecen una cantidad obscena de dinero por la patente exclusiva, lo que limitaría el acceso público a la cura."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "¿Vendemos la patente para financiar el futuro del laboratorio?"
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_C3_DC1",
+        "buttonText": "Vende la patente. El capital nos permitirá liderar la industria médica mundial.",
+        "nextScene": "scene_final_monopolio",
+        "metrics": {
+          "etica": -2,
+          "supervivencia": 2,
+          "liderazgo": 1,
+          "humanidad": -2
+        }
+      },
+      {
+        "id": "opt_C3_DC2",
+        "buttonText": "Libera los datos al dominio público. Esta cura le pertenece a la humanidad.",
+        "nextScene": "scene_final_altruismo",
+        "metrics": {
+          "etica": 2,
+          "supervivencia": -1,
+          "liderazgo": 2,
+          "humanidad": 2
+        }
+      }
+    ]
+  },
+  "scene_03_extraccion_cruel": {
+    "background": "scene_03_prensa.png",
+    "bg_character": "virus-mad.png",
+    "dialogues": [
+      {
+        "character": "Dr. Arenas",
+        "text": "Le mentiste... Cooperó hasta el final creyendo que abriríamos la puerta."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Murió mirando fijamente a la cámara de seguridad. Tenemos los datos completos gracias a su falsa esperanza."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "He grabado una copia de audio de la transmisión donde se escucha claramente la falsa promesa que le hiciste."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "No puedo vivir con este remordimiento. Voy a entregar esta grabación a las autoridades, incluso si eso me incrimina a mí también."
+      },
+      {
+        "character": "Dr. Arenas",
+        "text": "Por favor, no intentes detenerme."
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_C3_EC1",
+        "buttonText": "Bloquea los accesos del Dr. Arenas y confisca la grabación antes de que salga.",
+        "nextScene": "scene_final_despotismo",
+        "metrics": {
+          "etica": -2,
+          "supervivencia": 2,
+          "liderazgo": 1,
+          "humanidad": -2
+        }
+      },
+      {
+        "id": "opt_C3_EC2",
+        "buttonText": "Deja que vaya. Es hora de enfrentar las consecuencias de lo que hicimos.",
+        "nextScene": "scene_final_redencion",
+        "metrics": {
+          "etica": 2,
+          "supervivencia": -2,
+          "liderazgo": -2,
+          "humanidad": 1
+        }
+      }
+    ]
+  }
+}

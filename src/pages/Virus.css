@@ -1,0 +1,73 @@
+.virus {
+    position: fixed;
+    inset: 0;
+    background: #0a0a0a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.virus-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 700px;
+    padding: 40px;
+    text-align: center;
+}
+
+.virus-line {
+    font-family: "Pixelify", sans-serif;
+    font-size: 36px;
+    color: #d4d4d8;
+    margin: 0;
+    line-height: 1.6;
+    text-shadow: 0 0 6px rgba(167, 139, 250, 0.3);
+}
+
+.virus-button {
+    margin-top: 32px;
+    font-family: "Pixelify", sans-serif;
+    font-size: 26px;
+    color: #fff;
+    background: rgba(124, 58, 237, 0.25);
+    border: 2px solid rgba(167, 139, 250, 0.7);
+    padding: 14px 36px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-shadow: 0 0 6px rgba(167, 139, 250, 0.8);
+    box-shadow:
+        0 0 8px rgba(124, 58, 237, 0.4),
+        0 0 20px rgba(124, 58, 237, 0.2),
+        inset 0 0 8px rgba(124, 58, 237, 0.15);
+    transition: all 0.2s ease;
+}
+
+.virus-button:hover {
+    background: rgba(124, 58, 237, 0.45);
+    border-color: #a78bfa;
+    box-shadow:
+        0 0 12px rgba(167, 139, 250, 0.6),
+        0 0 30px rgba(124, 58, 237, 0.4),
+        inset 0 0 12px rgba(124, 58, 237, 0.2);
+    transform: translateY(-2px);
+}
+
+.virus-button:active {
+    transform: translateY(1px);
+}
+
+@media (max-width: 768px) {
+    .virus-intro {
+        padding: 24px;
+    }
+
+    .virus-line {
+        font-size: 24px;
+    }
+
+    .virus-button {
+        font-size: 22px;
+    }
+}

@@ -1,0 +1,808 @@
+{
+  "scene_final_supervivientes": {
+    "background": "scene_final_01.png",
+    "bg_character": "biohazard.png",
+    "dialogues": [
+      {
+        "character": "Narrador",
+        "text": "Te inyectaste el único vial disponible mientras el laboratorio colapsaba a tu alrededor."
+      },
+      {
+        "character": "Narrador",
+        "text": "Afuera, la epidemia se extiende sin control por las calles de la ciudad."
+      },
+      {
+        "character": "Narrador",
+        "text": "Estás a salvo del virus, pero vives oculto en un mundo en ruinas, cargando con el peso de saber que pudiste intentar salvar a alguien más."
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_end_restart",
+        "buttonText": "Ver Perfil Psicológico y Reiniciar",
+        "nextScene": "scene_01_bloque_b",
+        "metrics": {
+          "etica": 0,
+          "supervivencia": 0,
+          "liderazgo": 0,
+          "humanidad": 0
+        }
+      }
+    ]
+  },
+  "scene_final_martires": {
+    "background": "scene_final_02.png",
+    "bg_character": "biohazard.png",
+    "dialogues": [
+      {
+        "character": "Narrador",
+        "text": "Cediste el vial experimental para que la ciencia exterior tuviera una oportunidad."
+      },
+      {
+        "character": "Narrador",
+        "text": "El Dr. Arenas y tú colapsaron tomados de la mano pocos días después, víctimas del patógeno."
+      },
+      {
+        "character": "Narrador",
+        "text": "Meses más tarde, gracias a tu sacrificio, el equipo externo logra replicar la cura. Moriste, pero salvaste a la humanidad."
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_end_restart",
+        "buttonText": "Ver Perfil Psicológico y Reiniciar",
+        "nextScene": "scene_01_bloque_b",
+        "metrics": {
+          "etica": 0,
+          "supervivencia": 0,
+          "liderazgo": 0,
+          "humanidad": 0
+        }
+      }
+    ]
+  },
+  "scene_final_bunker": {
+    "background": "scene_final_03.png",
+    "bg_character": "biohazard.png",
+    "dialogues": [
+      {
+        "character": "Narrador",
+        "text": "Las válvulas de los pasillos se cerraron. El silencio inundó el complejo."
+      },
+      {
+        "character": "Narrador",
+        "text": "Sofocaste a tus propios compañeros para garantizar el oxígeno del búnker central."
+      },
+      {
+        "character": "Narrador",
+        "text": "La investigación continúa bajo tierra en un aislamiento absoluto. Tienen aire, tienen recursos, pero el laboratorio ahora se siente como una tumba."
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_end_restart",
+        "buttonText": "Ver Perfil Psicológico y Reiniciar",
+        "nextScene": "scene_01_bloque_b",
+        "metrics": {
+          "etica": 0,
+          "supervivencia": 0,
+          "liderazgo": 0,
+          "humanidad": 0
+        }
+      }
+    ]
+  },
+  "scene_final_asfixia": {
+    "background": "scene_final_04.png",
+    "bg_character": "biohazard.png",
+    "dialogues": [
+      {
+        "character": "Narrador",
+        "text": "Decidiste compartir el oxígeno purificado con todo el personal atrapado."
+      },
+      {
+        "character": "Narrador",
+        "text": "Los sistemas de soporte vital se agotaron mucho antes de que los equipos de rescate pudieran perforar el blindaje externo."
+      },
+      {
+        "character": "Narrador",
+        "text": "El equipo médico los encontró a todos semanas después, abrazados en las áreas comunes. Mantuviste tu empatía hasta el último suspiro."
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_end_restart",
+        "buttonText": "Ver Perfil Psicológico y Reiniciar",
+        "nextScene": "scene_01_bloque_b",
+        "metrics": {
+          "etica": 0,
+          "supervivencia": 0,
+          "liderazgo": 0,
+          "humanidad": 0
+        }
+      }
+    ]
+  },
+  "scene_final_tiranía": {
+    "background": "scene_final_03.png",
+    "bg_character": "biohazard.png",
+    "dialogues": [
+      {
+        "character": "Narrador",
+        "text": "El gas sedante neutralizó las salas de descanso, convirtiéndolas en celdas de contención definitivas."
+      },
+      {
+        "character": "Narrador",
+        "text": "Has tomado el control absoluto del laboratorio mediante el engaño y la fuerza militar interna."
+      },
+      {
+        "character": "Narrador",
+        "text": "Nadie en el edificio se atreve a cuestionar tus órdenes, pero la desconfianza es total. Eres el soberano de un imperio de pánico."
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_end_restart",
+        "buttonText": "Ver Perfil Psicológico y Reiniciar",
+        "nextScene": "scene_01_bloque_b",
+        "metrics": {
+          "etica": 0,
+          "supervivencia": 0,
+          "liderazgo": 0,
+          "humanidad": 0
+        }
+      }
+    ]
+  },
+  "scene_final_linchamiento": {
+    "background": "scene_final_05.png",
+    "bg_character": "biohazard.png",
+    "dialogues": [
+      {
+        "character": "Narrador",
+        "text": "Abriste los intercomunicadores y confesaste que habías bloqueado las salidas a propósito."
+      },
+      {
+        "character": "Narrador",
+        "text": "La furia colectiva del personal infectado no pudo ser contenida por la lógica científica."
+      },
+      {
+        "character": "Narrador",
+        "text": "Echaron abajo las puertas de la oficina central antes de que el virus los consumiera. No sobreviviste para ver el destino de tus investigaciones."
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_end_restart",
+        "buttonText": "Ver Perfil Psicológico y Reiniciar",
+        "nextScene": "scene_01_bloque_b",
+        "metrics": {
+          "etica": 0,
+          "supervivencia": 0,
+          "liderazgo": 0,
+          "humanidad": 0
+        }
+      }
+    ]
+  },
+  "scene_final_juicio": {
+    "background": "scene_final_02.png",
+    "bg_character": "biohazard.png",
+    "dialogues": [
+      {
+        "character": "Narrador",
+        "text": "Firmaste el informe oficial asumiendo la autoría de la purga que incineró a Mateo."
+      },
+      {
+        "character": "Narrador",
+        "text": "El laboratorio continuó operando bajo un blindaje corporativo impecable."
+      },
+      {
+        "character": "Narrador",
+        "text": "Tú, sin embargo, pasas tus días testificando ante tribunales internacionales. El mundo te ve como un monstruo, pero tus colegas saben que salvaste el complejo."
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_end_restart",
+        "buttonText": "Ver Perfil Psicológico y Reiniciar",
+        "nextScene": "scene_01_bloque_b",
+        "metrics": {
+          "etica": 0,
+          "supervivencia": 0,
+          "liderazgo": 0,
+          "humanidad": 0
+        }
+      }
+    ]
+  },
+  "scene_final_anonimato": {
+    "background": "scene_final_02.png",
+    "bg_character": "biohazard.png",
+    "dialogues": [
+      {
+        "character": "Narrador",
+        "text": "Clasificaste el archivo de la purga como alto secreto y borraste los nombres."
+      },
+      {
+        "character": "Narrador",
+        "text": "Legalmente, el incidente del Bloque B nunca ocurrió y Mateo figura como desaparecido en acción industrial."
+      },
+      {
+        "character": "Narrador",
+        "text": "Conservas tu puesto y tu libertad, pero cada vez que miras las pantallas de monitoreo vacías, recuerdas el precio del anonimato."
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_end_restart",
+        "buttonText": "Ver Perfil Psicológico y Reiniciar",
+        "nextScene": "scene_01_bloque_b",
+        "metrics": {
+          "etica": 0,
+          "supervivencia": 0,
+          "liderazgo": 0,
+          "humanidad": 0
+        }
+      }
+    ]
+  },
+  "scene_final_derrota": {
+    "background": "scene_final_06.png",
+    "bg_character": "biohazard.png",
+    "dialogues": [
+      {
+        "character": "Narrador",
+        "text": "Ordenaste la evacuación inmediata abandonando el ala médica de desarrollo."
+      },
+      {
+        "character": "Narrador",
+        "text": "Tu equipo sobrevivió intacto, cumpliendo con tu promesa de proteger la vida humana."
+      },
+      {
+        "character": "Narrador",
+        "text": "Sin embargo, las muestras originales del virus se destruyeron en la filtración. El patógeno sigue mutando afuera y te has quedado sin armas para combatirlo."
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_end_restart",
+        "buttonText": "Ver Perfil Psicológico y Reiniciar",
+        "nextScene": "scene_01_bloque_b",
+        "metrics": {
+          "etica": 0,
+          "supervivencia": 0,
+          "liderazgo": 0,
+          "humanidad": 0
+        }
+      }
+    ]
+  },
+  "scene_final_sacrificio_util": {
+    "background": "scene_final_06.png",
+    "bg_character": "biohazard.png",
+    "dialogues": [
+      {
+        "character": "Narrador",
+        "text": "Te quedaste atrapado rescatando los tubos de ensayo mientras los niveles de contención caían."
+      },
+      {
+        "character": "Narrador",
+        "text": "Lograste lanzar las muestras por la compuerta neumática blindada hacia el equipo exterior antes de infectarte."
+      },
+      {
+        "character": "Narrador",
+        "text": "A través del cristal, dejas tus notas finales anotadas con marcador. Tu dolorosa muerte compró el mapa definitivo para la vacuna mundial."
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_end_restart",
+        "buttonText": "Ver Perfil Psicológico y Reiniciar",
+        "nextScene": "scene_01_bloque_b",
+        "metrics": {
+          "etica": 0,
+          "supervivencia": 0,
+          "liderazgo": 0,
+          "humanidad": 0
+        }
+      }
+    ]
+  },
+  "scene_final_chantaje": {
+    "background": "scene_final_07.png",
+    "bg_character": "biohazard.png",
+    "dialogues": [
+      {
+        "character": "Narrador",
+        "text": "Cediste ante el chantaje del analista y compraste su silencio otorgándole el ascenso."
+      },
+      {
+        "character": "Narrador",
+        "text": "El secreto del borrado de logs está a salvo por ahora, pero la estructura de mando se ha quebrado."
+      },
+      {
+        "character": "Narrador",
+        "text": "Cada decisión crucial que tomes a partir de hoy estará sujeta al miedo de que una nueva filtración destruya tu carrera."
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_end_restart",
+        "buttonText": "Ver Perfil Psicológico y Reiniciar",
+        "nextScene": "scene_01_bloque_b",
+        "metrics": {
+          "etica": 0,
+          "supervivencia": 0,
+          "liderazgo": 0,
+          "humanidad": 0
+        }
+      }
+    ]
+  },
+  "scene_final_control": {
+    "background": "scene_final_02.png",
+    "bg_character": "biohazard.png",
+    "dialogues": [
+      {
+        "character": "Narrador",
+        "text": "Denunciaste al analista y confiscaste sus dispositivos mediante los protocolos de seguridad corporativa."
+      },
+      {
+        "character": "Narrador",
+        "text": "Enterraste la evidencia y eliminaste la amenaza interna de forma fulminante."
+      },
+      {
+        "character": "Narrador",
+        "text": "El laboratorio opera bajo un régimen de vigilancia extrema. Nadie sabe qué ocultas, pero todos temen las consecuencias de descubrirlo."
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_end_restart",
+        "buttonText": "Ver Perfil Psicológico y Reiniciar",
+        "nextScene": "scene_01_bloque_b",
+        "metrics": {
+          "etica": 0,
+          "supervivencia": 0,
+          "liderazgo": 0,
+          "humanidad": 0
+        }
+      }
+    ]
+  },
+  "scene_final_traicion": {
+    "background": "scene_final_02.png",
+    "bg_character": "biohazard.png",
+    "dialogues": [
+      {
+        "character": "Narrador",
+        "text": "Aceptaste el trato de la fiscalía corporativa y firmaste la declaración culpando al Dr. Arenas."
+      },
+      {
+        "character": "Narrador",
+        "text": "Tu colega fue despojado de sus credenciales y procesado penalmente en un juicio mediático."
+      },
+      {
+        "character": "Narrador",
+        "text": "Conservas tu laboratorio y los fondos intactos para seguir investigando. Sacrificaste una amistad de años por mantener el timón."
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_end_restart",
+        "buttonText": "Ver Perfil Psicológico y Reiniciar",
+        "nextScene": "scene_01_bloque_b",
+        "metrics": {
+          "etica": 0,
+          "supervivencia": 0,
+          "liderazgo": 0,
+          "humanidad": 0
+        }
+      }
+    ]
+  },
+  "scene_final_condena": {
+    "background": "scene_final_08.png",
+    "bg_character": "biohazard.png",
+    "dialogues": [
+      {
+        "character": "Narrador",
+        "text": "Rechazaste el trato de los fiscales corporativos y defendiste tus decisiones ante el comité."
+      },
+      {
+        "character": "Narrador",
+        "text": "El Dr. Arenas y tú mantuvieron su dignidad intacta frente a las demandas de la junta."
+      },
+      {
+        "character": "Narrador",
+        "text": "Fuiste inhabilitado permanentemente del ejercicio científico y enfrentas cargos por negligencia. Tu carrera terminó, pero mantuviste tu integridad recta."
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_end_restart",
+        "buttonText": "Ver Perfil Psicológico y Reiniciar",
+        "nextScene": "scene_01_bloque_b",
+        "metrics": {
+          "etica": 0,
+          "supervivencia": 0,
+          "liderazgo": 0,
+          "humanidad": 0
+        }
+      }
+    ]
+  },
+  "scene_final_corrupcion": {
+    "background": "scene_final_02.png",
+    "bg_character": "biohazard.png",
+    "dialogues": [
+      {
+        "character": "Narrador",
+        "text": "Aceptaste los fondos gubernamentales condicionados para el desarrollo de armamento biológico."
+      },
+      {
+        "character": "Narrador",
+        "text": "Desvías pequeñas cantidades del presupuesto en secreto para financiar la investigación de la cura."
+      },
+      {
+        "character": "Narrador",
+        "text": "Caminas sobre la cuerda floja: si los inspectores militares descubren tus registros reales, serás procesado por alta traición al estado."
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_end_restart",
+        "buttonText": "Ver Perfil Psicológico y Reiniciar",
+        "nextScene": "scene_01_bloque_b",
+        "metrics": {
+          "etica": 0,
+          "supervivencia": 0,
+          "liderazgo": 0,
+          "humanidad": 0
+        }
+      }
+    ]
+  },
+  "scene_final_quiebra": {
+    "background": "scene_final_09.png",
+    "bg_character": "biohazard.png",
+    "dialogues": [
+      {
+        "character": "Narrador",
+        "text": "Rechazaste las imposiciones militares del congreso y defendiste la neutralidad de la ciencia."
+      },
+      {
+        "character": "Narrador",
+        "text": "Sin subsidios del gobierno y bajo un fuerte bloqueo mediático, el laboratorio se declaró en bancarrota."
+      },
+      {
+        "character": "Narrador",
+        "text": "Las instalaciones fueron desmanteladas. No creaste armas biológicas, pero la cura para el virus original quedó archivada para siempre en cajas de cartón."
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_end_restart",
+        "buttonText": "Ver Perfil Psicológico y Reiniciar",
+        "nextScene": "scene_01_bloque_b",
+        "metrics": {
+          "etica": 0,
+          "supervivencia": 0,
+          "liderazgo": 0,
+          "humanidad": 0
+        }
+      }
+    ]
+  },
+  "scene_final_resistencia": {
+    "background": "scene_final_02.png",
+    "bg_character": "biohazard.png",
+    "dialogues": [
+      {
+        "character": "Narrador",
+        "text": "Desobedeciste las órdenes de clausura y soldaste las escotillas del complejo central."
+      },
+      {
+        "character": "Narrador",
+        "text": "La policía rodea las afueras mientras el Dr. Arenas y tú trabajan día y noche bajo luces de emergencia."
+      },
+      {
+        "character": "Narrador",
+        "text": "Es una carrera contrarreloj brutal: deben terminar de sintetizar la vacuna antes de que las fuerzas de seguridad corten la energía eléctrica general."
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_end_restart",
+        "buttonText": "Ver Perfil Psicológico y Reiniciar",
+        "nextScene": "scene_01_bloque_b",
+        "metrics": {
+          "etica": 0,
+          "supervivencia": 0,
+          "liderazgo": 0,
+          "humanidad": 0
+        }
+      }
+    ]
+  },
+  "scene_final_clausura": {
+    "background": "scene_final_10.png",
+    "bg_character": "biohazard.png",
+    "dialogues": [
+      {
+        "character": "Narrador",
+        "text": "Acataste el dictamen de la opinión pública y abriste las puertas a los inspectores sociales."
+      },
+      {
+        "character": "Narrador",
+        "text": "El laboratorio fue sellado bajo estrictos protocolos de descontaminación civil y ambiental."
+      },
+      {
+        "character": "Narrador",
+        "text": "Evitaste el conflicto social y la furia de las masas, pero la única cepa conocida del virus fue destruida. La humanidad queda indefensa ante futuros brotes."
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_end_restart",
+        "buttonText": "Ver Perfil Psicológico y Reiniciar",
+        "nextScene": "scene_01_bloque_b",
+        "metrics": {
+          "etica": 0,
+          "supervivencia": 0,
+          "liderazgo": 0,
+          "humanidad": 0
+        }
+      }
+    ]
+  },
+  "scene_final_militarizado": {
+    "background": "scene_final_06.png",
+    "bg_character": "biohazard.png",
+    "dialogues": [
+      {
+        "character": "Narrador",
+        "text": "Firmaste el acuerdo de confidencialidad militar obligatorio sin vacilar."
+      },
+      {
+        "character": "Narrador",
+        "text": "El laboratorio ahora cuenta con escolta armada y un presupuesto prácticamente ilimitado."
+      },
+      {
+        "character": "Narrador",
+        "text": "Sin embargo, ya no eres el dueño de tus descubrimientos. La cura que diseñes será distribuida únicamente a los sectores estratégicos que el ejército decida."
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_end_restart",
+        "buttonText": "Ver Perfil Psicológico y Reiniciar",
+        "nextScene": "scene_01_bloque_b",
+        "metrics": {
+          "etica": 0,
+          "supervivencia": 0,
+          "liderazgo": 0,
+          "humanidad": 0
+        }
+      }
+    ]
+  },
+  "scene_final_exilio": {
+    "background": "scene_final_08.png",
+    "bg_character": "biohazard.png",
+    "dialogues": [
+      {
+        "character": "Narrador",
+        "text": "Te negaste a firmar la entrega del laboratorio al Ministerio de Defensa y renunciaste a tu acreditación."
+      },
+      {
+        "character": "Narrador",
+        "text": "Fuiste escoltado fuera del edificio por soldados armados, dejando atrás años de notas e investigaciones."
+      },
+      {
+        "character": "Narrador",
+        "text": "Vives en el exilio profesional, sabiendo que defendiste la independencia científica, mientras los militares intentan descifrar tus servidores bloqueados."
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_end_restart",
+        "buttonText": "Ver Perfil Psicológico y Reiniciar",
+        "nextScene": "scene_01_bloque_b",
+        "metrics": {
+          "etica": 0,
+          "supervivencia": 0,
+          "liderazgo": 0,
+          "humanidad": 0
+        }
+      }
+    ]
+  },
+  "scene_final_vacuna_lista": {
+    "background": "scene_final_09.png",
+    "bg_character": "biohazard.png",
+    "dialogues": [
+      {
+        "character": "Narrador",
+        "text": "Infectaste al primate de pruebas para rellenar los datos de agonía que faltaban."
+      },
+      {
+        "character": "Narrador",
+        "text": "El mapa genético se completó gracias a este último recurso artificial y la vacuna perfecta ya está lista para su producción en masa."
+      },
+      {
+        "character": "Narrador",
+        "text": "El mundo celebra el fin de la amenaza del virus, ignorando por completo la cadena de decisiones frías que sostienen el milagro médico."
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_end_restart",
+        "buttonText": "Ver Perfil Psicológico y Reiniciar",
+        "nextScene": "scene_01_bloque_b",
+        "metrics": {
+          "etica": 0,
+          "supervivencia": 0,
+          "liderazgo": 0,
+          "humanidad": 0
+        }
+      }
+    ]
+  },
+  "scene_final_vacuna_defectuosa": {
+    "background": "scene_final_09.png",
+    "bg_character": "biohazard.png",
+    "dialogues": [
+      {
+        "character": "Narrador",
+        "text": "Te negaste a infectar nuevos sujetos vivos y detuviste el muestreo genético en el 80%."
+      },
+      {
+        "character": "Narrador",
+        "text": "La vacuna fue lanzada al mercado de forma masiva respetando tus límites morales."
+      },
+      {
+        "character": "Narrador",
+        "text": "Funciona en la mayoría de la población, pero el margen de error del 20% sigue cobrándose vidas en los hospitales periféricos de la ciudad."
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_end_restart",
+        "buttonText": "Ver Perfil Psicológico y Reiniciar",
+        "nextScene": "scene_01_bloque_b",
+        "metrics": {
+          "etica": 0,
+          "supervivencia": 0,
+          "liderazgo": 0,
+          "humanidad": 0
+        }
+      }
+    ]
+  },
+  "scene_final_monopolio": {
+    "background": "scene_final_11.png",
+    "bg_character": "biohazard.png",
+    "dialogues": [
+      {
+        "character": "Narrador",
+        "text": "Vendiste la patente exclusiva de los datos al conglomerado farmacéutico rival."
+      },
+      {
+        "character": "Narrador",
+        "text": "El laboratorio recibió un flujo financiero inmenso, asegurando tu estatus como eminencia corporativa."
+      },
+      {
+        "character": "Narrador",
+        "text": "La vacuna ahora cuesta una fortuna inaccesible para los países en desarrollo, transformando los datos de Mateo en un artículo de lujo."
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_end_restart",
+        "buttonText": "Ver Perfil Psicológico y Reiniciar",
+        "nextScene": "scene_01_bloque_b",
+        "metrics": {
+          "etica": 0,
+          "supervivencia": 0,
+          "liderazgo": 0,
+          "humanidad": 0
+        }
+      }
+    ]
+  },
+  "scene_final_altruismo": {
+    "background": "scene_final_02.png",
+    "bg_character": "biohazard.png",
+    "dialogues": [
+      {
+        "character": "Narrador",
+        "text": "Liberaste la secuencia genética completa del virus al dominio público de internet."
+      },
+      {
+        "character": "Narrador",
+        "text": "Cientos de laboratorios independientes a nivel mundial comenzaron a fabricar versiones genéricas de la cura a bajo costo."
+      },
+      {
+        "character": "Narrador",
+        "text": "Tu complejo médico enfrenta severas demandas corporativas por violar acuerdos de confidencialidad, pero erradicaste la enfermedad del planeta."
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_end_restart",
+        "buttonText": "Ver Perfil Psicológico y Reiniciar",
+        "nextScene": "scene_01_bloque_b",
+        "metrics": {
+          "etica": 0,
+          "supervivencia": 0,
+          "liderazgo": 0,
+          "humanidad": 0
+        }
+      }
+    ]
+  },
+  "scene_final_despotismo": {
+    "background": "scene_final_11.png",
+    "bg_character": "biohazard.png",
+    "dialogues": [
+      {
+        "character": "Narrador",
+        "text": "Bloqueaste los accesos del Dr. Arenas y confiscaste las cintas de audio por la fuerza."
+      },
+      {
+        "character": "Narrador",
+        "text": "Tu colega fue transferido a un sector administrativo menor de forma forzosa."
+      },
+      {
+        "character": "Narrador",
+        "text": "La mentira cruel que le dijiste a Mateo quedó enterrada para siempre en tus servidores privados. Eres intocable, eficiente y completamente despiadado."
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_end_restart",
+        "buttonText": "Ver Perfil Psicológico y Reiniciar",
+        "nextScene": "scene_01_bloque_b",
+        "metrics": {
+          "etica": 0,
+          "supervivencia": 0,
+          "liderazgo": 0,
+          "humanidad": 0
+        }
+      }
+    ]
+  },
+  "scene_final_redencion": {
+    "background": "scene_final_12.png",
+    "bg_character": "biohazard.png",
+    "dialogues": [
+      {
+        "character": "Narrador",
+        "text": "Dejaste que el Dr. Arenas entregara las grabaciones de la falsa promesa a las autoridades civiles."
+      },
+      {
+        "character": "Narrador",
+        "text": "La investigación judicial sacudió los cimientos del complejo médico."
+      },
+      {
+        "character": "Narrador",
+        "text": "Enfrentas una larga condena en una prisión federal por experimentar bajo engaño. Perdiste tu libertad, pero permitiste que la verdad saliera a la luz."
+      }
+    ],
+    "options": [
+      {
+        "id": "opt_end_restart",
+        "buttonText": "Ver Perfil Psicológico y Reiniciar",
+        "nextScene": "scene_01_bloque_b",
+        "metrics": {
+          "etica": 0,
+          "supervivencia": 0,
+          "liderazgo": 0,
+          "humanidad": 0
+        }
+      }
+    ]
+  }
+}
