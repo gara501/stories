@@ -5,6 +5,7 @@ import DialogueBox from '../components/DialogueBox'
 import { useMetricsStore } from '../store/useMetricsStore'
 import { useMusicStore } from '../store/useMusicStore'
 import { playButtonSelect } from '../store/useSfx'
+import { etica, humanidad, liderazgo, supervivencia } from '../data/virus/data'
 import scene01Data from '../data/virus/scene_01.json'
 import scene02Data from '../data/virus/scene_02.json'
 import scene03Data from '../data/virus/scene_03.json'
@@ -82,6 +83,30 @@ type SceneData = {
   metrics?: Record<string, number>
 }
 
+type Metrics = {
+  etica: number
+  supervivencia: number
+  humanidad: number
+  liderazgo: number
+}
+
+const PERFILES = {
+  etica,
+  supervivencia,
+  humanidad,
+  liderazgo,
+}
+
+const obtenerParrafoPerfil = (metrics: Metrics) => {
+  const { etica, supervivencia, humanidad, liderazgo } = metrics
+  const maxScore = Math.max(etica, supervivencia, humanidad, liderazgo)
+
+  if (maxScore === etica) return PERFILES.etica
+  if (maxScore === supervivencia) return PERFILES.supervivencia
+  if (maxScore === humanidad) return PERFILES.humanidad
+  return PERFILES.liderazgo
+}
+
 const allScenes: Record<string, SceneData> = {
   ...scene01Data,
   ...scene02Data,
@@ -106,6 +131,11 @@ export default function VirusGame() {
   const scene = allScenes[sceneKey]
   const bgImage = scene?.background ? bgMap[scene.background] || bgScene01 : bgScene01
   const characterImg = scene?.bg_character ? charMap[scene.bg_character] || charDefault : charDefault
+
+  const handleMainMenu = () => {
+    playButtonSelect()
+    navigate('/options')
+  }
 
   const handleOptionClick = (option: SceneData['options'][number]) => {
     playButtonSelect()
@@ -161,9 +191,17 @@ export default function VirusGame() {
     { label: 'Liderazgo', value: metrics.liderazgo },
     { label: 'Humanidad', value: metrics.humanidad },
   ]
+  const finalProfileParagraph = obtenerParrafoPerfil(metrics)
 
   return (
     <div className="virus-game">
+      <button className="virus-menu-button" type="button" onClick={handleMainMenu} aria-label="Volver al menú principal">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path d="M3 10.5 12 3l9 7.5" />
+          <path d="M5 10v10h14V10" />
+          <path d="M9 20v-6h6v6" />
+        </svg>
+      </button>
       <AnimatePresence mode="wait">
         <motion.div
           key={sceneKey + (showStats ? '-stats' : '')}
@@ -210,6 +248,7 @@ export default function VirusGame() {
                     )
                   })}
                 </div>
+                <p className="virus-profile-paragraph">{finalProfileParagraph}</p>
                 <div className="virus-stats-buttons">
                   <motion.button
                     className="virus-option-btn virus-restart-btn"
@@ -225,7 +264,7 @@ export default function VirusGame() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 1.2, duration: 0.5 }}
-                    onClick={() => { playButtonSelect(); navigate('/options') }}
+                    onClick={handleMainMenu}
                   >
                     Menú Principal
                   </motion.button>
