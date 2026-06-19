@@ -10,7 +10,7 @@ import option3Img from '../assets/bg/option3.png'
 const options = [
   { id: 'virus', title: 'Virus', image: option1Img, active: true },
   { id: 'apocalipsis', title: 'Apocalipsis', image: option2Img, active: false },
-  { id: 'exito', title: 'Exito', image: option3Img, active: false },
+  { id: 'exito', title: 'Éxito', image: option3Img, active: false },
 ]
 
 export default function Options() {
@@ -32,7 +32,13 @@ export default function Options() {
             onClick={opt.active ? () => { playButtonSelect(); navigate('/virus') } : undefined}
           >
             <div className="option-image-wrapper">
-              <img src={opt.image} alt={opt.title} className="option-image" />
+              <img
+                src={opt.image}
+                alt={opt.title}
+                className="option-image"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <p className="option-title">{opt.title}</p>
           </div>

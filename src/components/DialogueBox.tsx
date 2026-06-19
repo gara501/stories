@@ -39,7 +39,7 @@ export default function DialogueBox({ dialogues, characterImage, onComplete }: D
   return (
     <div className="dialogue-container" onClick={handleAdvance}>
       <div className="dialogue-character-img">
-        <img src={characterImage} alt={current.character} />
+        <img src={characterImage} alt={current.character} loading="lazy" decoding="async" />
       </div>
       <div className="dialogue-box">
         <div className="dialogue-name">

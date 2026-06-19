@@ -1,34 +1,53 @@
 import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { siteImages } from '../assets/imageAssets'
 import './Loader.css'
-
-import introBg from '../assets/bg/intro.png'
-import hero from '../assets/hero.png'
-
-const assets = [introBg, hero]
 
 interface LoaderProps {
   onComplete: () => void
 }
 
 export default function Loader({ onComplete }: LoaderProps) {
-  const [progress, setProgress] = useState(0)
-  const [done, setDone] = useState(false)
+  const [progress, setProgress] = useState(siteImages.length === 0 ? 100 : 0)
+  const [done, setDone] = useState(siteImages.length === 0)
 
   useEffect(() => {
+    if (siteImages.length === 0) {
+      return
+    }
+
+    let active = true
     let loaded = 0
 
-    assets.forEach((src) => {
-      const img = new Image()
-      img.src = src
-      img.onload = img.onerror = () => {
-        loaded++
-        setProgress(Math.round((loaded / assets.length) * 100))
-        if (loaded === assets.length) {
-          setTimeout(() => setDone(true), 400)
-        }
+    const markLoaded = () => {
+      if (!active) return
+      loaded += 1
+      setProgress(Math.round((loaded / siteImages.length) * 100))
+      if (loaded === siteImages.length) {
+        setTimeout(() => {
+          if (active) setDone(true)
+        }, 400)
       }
+    }
+
+    siteImages.forEach((src) => {
+      const img = new Image()
+      let counted = false
+      const countImage = () => {
+        if (counted) return
+        counted = true
+        markLoaded()
+      }
+      img.decoding = 'async'
+      img.onload = countImage
+      img.onerror = countImage
+      img.src = src
+      if (img.complete) countImage()
     })
+
+    return () => {
+      active = false
+    }
   }, [])
 
   useEffect(() => {

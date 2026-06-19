@@ -227,7 +227,7 @@ export default function VirusGame() {
                     transition={{ delay: 1.2, duration: 0.5 }}
                     onClick={() => { playButtonSelect(); navigate('/options') }}
                   >
-                    Menu Principal
+                    Menú Principal
                   </motion.button>
                 </div>
               </motion.div>
@@ -252,7 +252,13 @@ export default function VirusGame() {
                 transition={{ duration: 0.5 }}
               >
                 <div className="virus-options-header">
-                  <img src={characterImg} alt={scene.dialogues[0]?.character} className="virus-options-avatar" />
+                  <img
+                    src={characterImg}
+                    alt={scene.dialogues[0]?.character}
+                    className="virus-options-avatar"
+                    loading="lazy"
+                    decoding="async"
+                  />
                   <span className="virus-options-name">{scene.dialogues[0]?.character}</span>
                 </div>
                 <div className="virus-options-list">
